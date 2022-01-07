@@ -1,0 +1,57 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// // Variables
+@import 'variables';
+
+//Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Fontsawesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+.nav-tabs .nav-link {
+    color: #212529;
+}
+
+.nav-tabs .nav-link.active {
+    color: #212529;
+    font-weight: bolder;
+    background-color: #ffffff;
+    border-color: #dee2e6 #dee2e6 #ffffff;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #212529;
+    font-weight: bolder;
+    background-color: #ffffff;
+    border-color: #dee2e6;
+}
+
+.list-group-item.active::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    content: "";
+    background-color: #212529;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    background-color: white;
+    isolation: isolate;
+}
+
+.bg-border {
+    background-color: #dfdfdf;
+}
+
+.btn-primary,
+.btn-success,
+.btn-danger {
+    color: #fff;
+}
